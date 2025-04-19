@@ -14,16 +14,26 @@ A neurosymbolic AI server combining Prolog’s symbolic reasoning with Model Con
 - WebAssembly runtime: Trealla Prolog in WASI environment
 
 
-**Integration Example (cline):**
+**Integration with Cline/Roo/Copilot:**
 ```
-# cline.config.yaml
-servers:
-  prolog-reasoner:
-    module: "./prolog-mcp.js"
-    env:
-      SESSIONS_DIR: "/var/prolog-sessions"
-    capabilities:
-      - logical-reasoning
+{
+  "mcpServers": {
+    "prolog-mcp": {
+      "command": "node",
+      "args": [
+        "prolog-mcp/dist/index.js"
+      ],
+      "disabled": false,
+      "alwaysAllow": [
+        "loadProgram",
+        "runPrologQuery",
+        "saveSession",
+        "loadSession"
+      ],
+      "timeout": 15
+    }
+  }
+}
 ```
 
 **Development:**
