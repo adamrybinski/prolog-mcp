@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": ".",
+    "target": "es2015",
+    "moduleResolution": "nodenext",
+    "allowSyntheticDefaultImports": true,
+    "module": "NodeNext",
+    "types": ["vite/client", "node"],
+    "noEmit": false,
+    "allowImportingTsExtensions": false
+  },
+  "include": [
+    "./**/*.ts"
+  ]
+}
