@@ -1,15 +1,15 @@
 {
-  "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": ".",
-    "target": "es2015",
+    "target": "ES2020",
     "moduleResolution": "nodenext",
     "allowSyntheticDefaultImports": true,
     "module": "NodeNext",
-    "types": ["vite/client", "node"],
+    "types": ["node"],
     "noEmit": false,
-    "allowImportingTsExtensions": false
+    "allowImportingTsExtensions": false,
+    "skipLibCheck": true
   },
   "include": [
     "./**/*.ts"
