@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/adamrybinski-prolog-mcp-badge.png)](https://mseep.ai/app/adamrybinski-prolog-mcp)
+
 # Prolog-MCP Server
 
 A neurosymbolic AI server combining Prolog’s symbolic reasoning with Model Context Protocol (MCP) for hybrid AI applications.
